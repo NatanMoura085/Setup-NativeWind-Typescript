@@ -1,10 +1,18 @@
-import React from 'react'
+import React from "react";
 import { Text, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator} from "@react-navigation/native-stack";
 
+
+const Stack = createNativeStackNavigator();
 export default function App() {
+  
   return (
-    <View className="flex-1 items-center justify-center bg-zinc-900">
-      <Text className="text-white text-4xl font-bold">Hello Nathan!</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+  
+      </Stack.Navigator>
+
+    </NavigationContainer>
   );
 }
